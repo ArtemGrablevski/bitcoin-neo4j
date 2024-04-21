@@ -2,7 +2,7 @@ import pandas as pd
 
 
 def get_transactions(inputs_file: bytes, outputs_file: bytes) -> pd.DataFrame:
-
+    # TODO: read in batches
     inputs = pd.read_csv(inputs_file, sep="\t")
     inputs = inputs[["recipient", "transaction_hash"]]
 
