@@ -16,3 +16,9 @@ Run the app:
 
 ## Visualisation example:
 ![graph](https://raw.githubusercontent.com/ArtemGrablevski/bitcoin-neo4j/main/images/graph_example.png)
+
+## How can the project be improved:
+- Use Kafka/RabbitMQ
+- Read large input TSV files in batches
+- Set up logging and monitoring.
+- Set up authentication.
