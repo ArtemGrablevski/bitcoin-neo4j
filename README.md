@@ -1,39 +1,18 @@
-# EpicBooks backend
+# Bitcoin transactions
 
 ## Run with Docker
 Don't forget to create `.env` file before. Use `.env.example` as an example.
-
-Build the app:
 ```
-make docker-build
+docker compose up --build
 ```
 Run the app:
-```
-make docker-run
-```
 
-## Python launch
-Create virtual environment:
-```
-python3 -m venv venv
-```
-Activate virtual environment:
-```
-source venv/bin/activate
-```
-Install dependencies with `pip`:
-```
-pip install -r requirements.txt
-```
-Run database migrations with `alembic`:
-```
-alembic upgrade head
-```
-Run the app with `uvicorn`:
-```
-make run-uvicorn
-```
-Run the app with `gunicorn`:
-```
-make run-gunicorn
-```
+## How to use
+- Run the app
+- Open `http://127.0.0.1:8000/docs` in your browser
+- Upload tsv files from folder `input_files_examples` or from [blockchair.com](https://blockchair.com) (inputs and outputs archives) to the endpoint `/api/transactions/upload`
+- use `/api/transactions/{address}` endpoint to view address stats
+![swagger](https://raw.githubusercontent.com/ArtemGrablevski/bitcoin-neo4j/main/images/swagger.png)
+
+## Visualisation example:
+![graph](https://raw.githubusercontent.com/ArtemGrablevski/bitcoin-neo4j/main/images/graph_example.png)
