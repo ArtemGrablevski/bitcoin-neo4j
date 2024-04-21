@@ -5,7 +5,6 @@ Don't forget to create `.env` file before. Use `.env.example` as an example.
 ```
 docker compose up --build
 ```
-Run the app:
 
 ## How to use
 - Run the app
@@ -20,5 +19,5 @@ Run the app:
 ## How can the project be improved:
 - Use Kafka/RabbitMQ
 - Read large input TSV files in batches
-- Set up logging and monitoring.
-- Set up authentication.
+- Set up logging and monitoring
+- Set up authentication
