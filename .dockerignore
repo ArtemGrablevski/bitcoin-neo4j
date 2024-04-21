@@ -1,0 +1,10 @@
+venv/
+__pycache__/
+README.md
+.gitignore
+*.log
+.vscode/
+.idea
+dev/
+images/
+input_file_examples/
