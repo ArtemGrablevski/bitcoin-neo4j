@@ -12,7 +12,7 @@ router = APIRouter(
 
 
 @router.get("/{address}", status_code=status.HTTP_200_OK)
-def upload_csv(
+def get_address_statistics(
     address: str,
     neo4j_sevice: Neo4jService = Depends(get_neo4j_sevice)
 ):
